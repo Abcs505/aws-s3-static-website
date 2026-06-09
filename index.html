@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi | Cloud Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0c29;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 700px;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, #FF9900, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            font-weight: 300;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #FF9900, #FFD700);
+            color: #000;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .btn-primary:hover { transform: scale(1.05); }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid rgba(255,255,255,0.4);
+            transition: all 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card-icon { font-size: 40px; margin-bottom: 15px; }
+
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #FFD700;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 700px;
+            margin-bottom: 60px;
+        }
+
+        .skill-tag {
+            background: rgba(255,153,0,0.15);
+            border: 1px solid rgba(255,153,0,0.4);
+            color: #FFD700;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+        }
+
+        .footer span { color: #FF9900; }
+    </style>
+</head>
+<body>
+
+    <div class="badge">☁️ Hosted on AWS S3 · Mumbai Region</div>
+
+    <div class="hero">
+        <h1>Hi, I'm <span>Abhi</span> 👋<br>Cloud Developer</h1>
+        <p>Passionate about building and deploying applications on AWS Cloud. Currently learning cloud architecture, serverless computing, and DevOps practices.</p>
+        <div class="buttons">
+            <a href="#" class="btn-primary">View My Projects</a>
+            <a href="#" class="btn-outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-icon">🪣</div>
+            <h3>AWS S3</h3>
+            <p>Cloud storage and static website hosting on Amazon S3</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🖥️</div>
+            <h3>AWS EC2</h3>
+            <p>Virtual servers and compute power in the cloud</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>AWS Lambda</h3>
+            <p>Serverless functions that scale automatically</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🔐</div>
+            <h3>AWS IAM</h3>
+            <p>Identity and access management for secure cloud</p>
+        </div>
+    </div>
+
+    <div class="skills">
+        <span class="skill-tag">AWS Cloud</span>
+        <span class="skill-tag">Cloud Architecture</span>
+        <span class="skill-tag">S3 Hosting</span>
+        <span class="skill-tag">IAM Security</span>
+        <span class="skill-tag">Serverless</span>
+        <span class="skill-tag">HTML & CSS</span>
+    </div>
+
+    <div class="footer">
+        <p>Built with ❤️ by <span>Abhi</span> · Powered by <span>AWS Cloud</span></p>
+        <p style="margin-top: 8px;">© 2025 · Hosted on Amazon S3</p>
+    </div>
+
+</body>
+</html>
